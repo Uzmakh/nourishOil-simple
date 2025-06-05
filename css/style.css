@@ -371,6 +371,7 @@ button a {
 .ingredients {
   background: var(--bg-light);
   text-align: center;
+  padding-bottom: 2rem;
 }
 
 .ing-wrapper {
