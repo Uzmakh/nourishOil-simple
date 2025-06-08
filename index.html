@@ -58,7 +58,7 @@
             dolore obcaecati hic nobis omnis officiis quibusdam excepturi
             deserunt doloribus, nemo rem maxime vitae quia dolores?
           </p>
-          <hr />
+          <hr class="hr" />
           <button><a href="#">Add to your cart</a></button>
         </div>
         <div class="half right-half">
@@ -353,6 +353,15 @@
           </div>
         </div>
       </div>
+      <hr class="hr" />
+
+      <p style="text-align: center; padding-bottom: 2rem">
+        Copyright &copy; <span id="current-year"></span> Nourish Oil
+      </p>
+      <script>
+        document.getElementById("current-year").textContent =
+          new Date().getFullYear();
+      </script>
     </footer>
     <script src="script.js"></script>
   </body>
