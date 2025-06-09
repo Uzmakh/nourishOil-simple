@@ -314,10 +314,21 @@ button a {
 /* * About Us - Section */
 
 .aboutus {
-  background-image: url("./images/");
-  background-position: center;
-  background-size: cover;
+  max-width: 1200px;
+  width: 90%;
   height: 100vh;
+
+  margin: 2rem auto 12rem;
+}
+
+.aboutus-img {
+  max-width: 90%;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.aboutus-img img {
+  width: 100%;
   border-radius: 4rem;
   position: relative;
 }
@@ -326,18 +337,17 @@ button a {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+
   gap: 1.2rem;
   margin: 18rem auto;
-  width: 35%;
+  width: 30%;
   color: var(--blackhue);
   position: absolute;
-  left: 55rem;
+  top: 180rem;
+  left: 70rem;
 }
 
-.aboutus .aboutus-content h4 {
-  text-align: start;
-}
+
 
 .aboutus .aboutus-content .btn-container {
   display: flex;
@@ -378,6 +388,7 @@ button a {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 12rem;
 }
 
@@ -466,7 +477,6 @@ button a {
   position: absolute;
   top: -5%;
   left: -30px;
-
   box-shadow: var(--box-shadow);
   z-index: 2;
 }
@@ -563,8 +573,7 @@ button a {
 .footer-content {
   display: flex;
   justify-content: space-evenly;
-  align-items: center;
-  gap: 2rem;
+  gap: 4rem;
   padding: 0 5rem 4rem;
 }
 
@@ -573,22 +582,24 @@ button a {
   gap: 3rem;
 }
 
+.social-column .icon-div {
+  display: flex;
+  gap: 2rem;
+}
+
 .social-column p {
   margin-bottom: 2rem;
 }
 
 .social-column i {
-  margin-left: 2rem;
+  margin-right: -0.2rem;
 }
 
 .link-column {
   display: flex;
   flex-direction: column;
-  flex: 1;
-  gap: 0.5rem;
-  align-items: center;
-
-  font-size: 1.5rem;
+  align-items: flex-start;
+  gap: 2rem;
 }
 
 .link-column a {
