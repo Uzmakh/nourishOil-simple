@@ -16,8 +16,8 @@
   --green-dark: #7aa17a;
   --bg-pinkpale: #b9b4b8;
   --palegrey: #d0cdcc;
-  --box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
-    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+  --box-shadow: rgba(0, 0, 0, 0.3) 0px 15px 30px,
+    rgba(0, 0, 0, 0.22) 0px 5px 2px;
 }
 
 html {
@@ -86,6 +86,16 @@ p {
   font-size: 2.2rem;
   color: var(--blackhue);
   text-transform: capitalize;
+}
+
+input {
+  /* display: inline-block; */
+  width: 50%;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  box-shadow: var(--box-shadow);
 }
 
 /****  Header-Navbar  *****/
@@ -175,6 +185,7 @@ p {
   display: flex;
   background: var(--palegrey);
   width: 100%;
+  min-height: 100vh;
 }
 
 .banner .half {
@@ -195,11 +206,6 @@ p {
   color: var(--blackhue);
 }
 
-/* .banner .left-half  {
-  text-align: start;
-  font-size: 4.2rem;
-} */
-
 .banner .left-half p {
   font-size: 1.8rem;
 }
@@ -208,10 +214,16 @@ p {
   height: 2px;
   width: 100%;
   color: var(--blackhue);
+  margin-top: 2rem;
+}
+
+.banner .right-half {
+  margin-top: -4rem;
 }
 
 .banner .right-half img {
   width: 100%;
+  object-fit: cover;
 }
 
 button {
@@ -220,6 +232,7 @@ button {
   border: none;
   background: var(--green-dark);
   box-shadow: var(--box-shadow);
+  margin-top: 2rem;
 
   &:hover {
     transform: scaleX(0.9);
@@ -234,7 +247,7 @@ button a {
 /** wavy-Border */
 
 .div1 {
-  margin-top: -105px;
+  margin-top: -145px;
   background: linear-gradient(#7aa17a, #ccd5ae);
   height: 32vh;
 }
@@ -242,7 +255,7 @@ button a {
 .div2 {
   margin-top: -100px;
   background: #ccd5ae;
-  height: 20vh;
+  height: 15vh;
   clip-path: url(#wave);
 }
 
@@ -317,7 +330,6 @@ button a {
   max-width: 1200px;
   width: 90%;
   height: 100vh;
-
   margin: 2rem auto 12rem;
 }
 
@@ -347,8 +359,6 @@ button a {
   left: 70rem;
 }
 
-
-
 .aboutus .aboutus-content .btn-container {
   display: flex;
   gap: 12px;
@@ -356,7 +366,7 @@ button a {
   align-items: center;
 }
 
-.aboutus .aboutus-content .btn-container .about-btn {
+.aboutus .aboutus-content .btn-container .btn-1 {
   padding: 10px 20px;
   border-radius: 12px;
   border: none;
@@ -372,8 +382,20 @@ button a {
   }
 }
 
-.btn-2 {
+.btn-container .btn-2 {
   background: var(--blackhue);
+  display: inline-block;
+  margin-top: 1.5rem;
+  color: var(--bg-light);
+  font-size: 2rem;
+  box-shadow: var(--box-shadow);
+  padding: 10px 20px;
+  border-radius: 12px;
+  border: none;
+
+  &:hover {
+    transform: scaleX(0.8);
+  }
 }
 
 /** Ingredients Section */
@@ -544,25 +566,12 @@ button a {
   color: var(--blackhue);
 }
 
-.input-flex {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
-}
 
-.newsletter .right-half input {
-  display: inline-block;
-  width: 50%;
-  padding: 12px 20px;
-  border-radius: 12px;
-  border: 1px solid var(--blackhue);
-  outline: none;
-}
 
 .newsletter .right-half button {
-  display: inline;
   width: 30%;
-  padding: 10px 18px;
+  padding: 8px 18px;
+  margin-left: 1rem;
 }
 
 /* * FOOTER*/
@@ -634,19 +643,18 @@ button a {
   margin-bottom: 2rem;
 }
 
-.subscribe-column .input-flex input {
-  display: inline-block;
-  width: 50%;
-  padding: 12px 20px;
-  border-radius: 12px;
-  border: 1px solid var(--blackhue);
-  outline: none;
-}
+
+/* .input-flex {
+  border: 1px solid red;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+} */
 
 .subscribe-column .input-flex button {
-  /* display: inline; */
+  margin-left: 1rem;
   width: 30%;
-  padding: 10px 18px;
+  padding: 8px 18px;
 }
 
 .footer i {
