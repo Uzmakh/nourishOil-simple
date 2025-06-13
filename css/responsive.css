@@ -115,14 +115,25 @@
         padding: 18rem 10rem 4rem;
     }
 
-    .banner .right-half {}
+    .banner .right-half {
+        margin-top: 2rem;
+    }
 
     .banner .right-half img {
         width: 70%;
         height: 80vmin;
     }
 
+    /** wavy-Border */
 
+    .div1 {
+        margin-top: -190px;
+    }
+
+    .div2 {
+        margin-top: -20px;
+        height: 20vh;
+    }
 
     /* * Statistics */
     .statistics {
@@ -137,14 +148,22 @@
     .feature-boxes {
         flex-direction: column;
         align-items: center;
+        justify-content: space-between;
+        gap: 8rem;
     }
+
+    /* *AboutUs section */
+    /* .aboutus {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    } */
 
     .aboutus .aboutus-content {
         margin: 10rem auto;
         width: 100%;
-        justify-content: flex-start;
-        position: absolute;
-        left: 0;
+        /* justify-content: flex-start; */
+        padding: 0 8rem;
     }
 
     /** Testimonial section */
@@ -153,12 +172,13 @@
         width: 90%;
         height: auto;
         min-height: 500px;
+        margin: 0 auto;
     }
 
     /* Center slider indicators */
     .indicator {
         bottom: 5%;
-        left: 50%;
+        left: 100%;
         transform: translateX(-50%);
     }
 
@@ -203,19 +223,36 @@
         height: auto;
     }
 
+    /* * Newsletter */
     .newsletter {
-        padding-top: 6rem;
+        /* padding-top: 6rem; */
+        overflow-y: hidden;
     }
 
     .newsletter-content {
         flex-direction: column;
 
-        gap: 8rem;
+        /* gap: 8rem; */
     }
 
     .newsletter .left-half img {
         width: 100%;
         clip-path: none;
+    }
+
+    /* * Footer */
+    .subscribe-column .input-flex input {
+        /* display: inline; */
+        /* margin-left: 1rem; */
+        width: 100%;
+        padding: 8px 18px;
+    }
+
+    .subscribe-column .input-flex button {
+        /* display: inline; */
+        /* margin-left: 1rem; */
+        /* width: 30%; */
+        padding: 8px 18px;
     }
 }
 
@@ -275,12 +312,7 @@
     .banner .half .right-half img {
         width: 100%;
         height: 100%;
-
     }
-
-
-
-
 
     /** wavy-Border */
 
@@ -289,7 +321,7 @@
     }
 
     .div2 {
-        height: 10vh;
+        height: 30vh;
     }
 
     /* * Statistics */
@@ -319,11 +351,32 @@
         gap: 4rem;
     }
 
+    /* *AboutUs section */
+    .aboutus {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+    }
+
+    .aboutus .aboutus-content {
+        /* margin: 10rem auto; */
+        width: 100%;
+        padding: 0 2rem 5rem;
+        /* display: flex; */
+        /* justify-content: flex-start; */
+    }
+
     /** Testimonial section */
-    /* .testimonial {
+    .testimonials {
+        margin-bottom: 6rem;
+    }
+
+    .testimonial {
         width: 100%;
         height: 100%;
-    } */
+        margin: 0 5rem;
+    }
 
     /* Further reduce container size */
     .container-test {
@@ -332,14 +385,33 @@
         margin: 0 auto;
     }
 
+    .slide-row {
+        /* max-width: 80%; */
+        display: flex;
+        flex-direction: column;
+        /* align-items: center;
+        justify-content: center; */
+        gap: 10rem;
+        /* width: 3200px; */
+        transition: transform 0.5s ease;
+        margin-top: 10rem;
+    }
+
+    .slide-col {
+        /* width: 400px;
+        height: 100%; */
+        /* position: relative; */
+    }
+
     /* Adjust text card sizing */
     .user-text {
-        width: 60%;
-        padding: 20px 15px;
+        width: 300px;
+        height: auto;
     }
 
     /* Reduce font size */
     .user-text p {
+        /* width: 100%; */
         font-size: 1.5rem;
         line-height: 1.4;
     }
@@ -347,25 +419,33 @@
     /* Modify image container */
     .user-image {
         /* margin-left: 0; */
-        width: 100%;
-        display: flex;
-        justify-content: center;
+        width: 30%;
+        /* display: flex;
+        justify-content: center; */
     }
 
     .user-image img {
-        width: 40%;
+        width: 20%;
         height: auto;
     }
 
-    /* Make slider buttons larger for touch */
-    .indicator .slider-btn {
-        width: 18px;
-        height: 18px;
+    .indicator {
+        display: none;
     }
 
-    .indicator .slider-btn.active {
-        width: 40px;
-    }
+    /* .slide-col .quote-mark {
+        display: block;
+    } */
+
+    /* Make slider buttons larger for touch */
+    /* .indicator .slider-btn {
+        width: 18px;
+        height: 18px;
+    } */
+
+    /* .indicator .slider-btn.active {
+        width: 35px;
+    } */
 
     /** Newsletter */
     .newsletter .right-half {
@@ -378,8 +458,8 @@
 
     .input-flex {
         flex-direction: column;
-        gap: 2rem;
-        align-items: flex-start;
+        /* gap: 2rem; */
+        /* align-items: flex-start; */
     }
 
     .newsletter .right-half input {
